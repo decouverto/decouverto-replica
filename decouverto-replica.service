@@ -3,7 +3,7 @@ Description=Decouverto Replica
 After=syslog.target network.target
 
 [Service]
-ExecStart=/home/cjung/.nvm/versions/node/v12.18.3/bin/node /repos/decouverto-replica/decouverto-replica.js
+ExecStart=/home/cjung/.nvm/versions/node/v12.18.3/bin/node /repos/decouverto-replica/decouverto-replica-cron.js
 Restart=always
 RestartSec=10
 StandardOutput=syslog
