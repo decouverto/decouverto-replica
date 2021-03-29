@@ -7,6 +7,10 @@ const fs = require('fs-extra');
 const series = require('async-series');
 const colors = require('colors');
 
+if (process.env.NODE_ENV === 'production') {
+    console.log = function() {};
+}
+
 let folder = path.resolve(process.cwd(), '../decouverto-website');
 let walksFolder = path.join(folder, '/walks');
 
